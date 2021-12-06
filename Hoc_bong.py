@@ -28,6 +28,4 @@ for i in range(soSV):
     SV[i][1]=tinhDiemTB(dsDiem,dsTC)
     SV[i][2]=int(input("Nhap diem ren luyen: "))
     SV[i][3]=SV[i][1]+0.2*SV[i][2]
-
-#SV=tinhDiem(dsDiem,dsTC)
 print(SV)
