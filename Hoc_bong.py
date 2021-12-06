@@ -24,8 +24,13 @@ for i in range(soSV):
     SV[i][0]=input("Nhap ten sinh vien: ")
     dsDiem=[0]*n
     for j in range(n):
-        dsDiem[i]=float(input("Nhap diem mon "+str(tenMon[j])+" : "))
+        dsDiem[j]=float(input("Nhap diem mon "+str(tenMon[j])+" : "))
     SV[i][1]=tinhDiemTB(dsDiem,dsTC)
     SV[i][2]=int(input("Nhap diem ren luyen: "))
     SV[i][3]=SV[i][1]+0.2*SV[i][2]
-print(SV)
+
+for i in SV:
+    print(i)
+hocBong=sorted(SV, key=lambda person:person[3])
+for i in reversed(range(5)):
+    print(SV[i][0])
