@@ -47,7 +47,3 @@ dsHocBong=hocBong(SV,n)
 print("Danh sach nhan hoc bong la:")
 for i in range(len(dsHocBong)):
     print(str(i+1)+". "+str(dsHocBong[i][0])+" : "+str(round(dsHocBong[i][3],2)))
-
-
-
-
