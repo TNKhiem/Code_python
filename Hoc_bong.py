@@ -18,18 +18,18 @@ def hocBong(SV,n):
     ds=[]
     try:
         while len(ds)<n:
-            M=max(SV,key=lambda person : person[1])
+            M=max(SV,key=lambda person : person[3])
             ds.append(M)
             SV.remove(M)
     except:
         while len(ds)<len(SV):
-            M = max(SV, key=lambda person: person[1])
+            M = max(SV, key=lambda person: person[3])
             ds.append(M)
             SV.remove(M)
     return ds
 
-tenMon=["Toan cao cap","Gioi thieu nganh"] #,"Tu duy lap trinh","Kinh te vi mo","LLNN va PL","Tu tuong HCM"]
-dsTC=[3,2] #,3,3,3,2]               #So tin chi moi mon
+tenMon=["Toan cao cap","Gioi thieu nganh","Tu duy lap trinh","Kinh te vi mo","LLNN va PL","Tu tuong HCM"]
+dsTC=[3,2,3,3,3,2]               #So tin chi moi mon
 soSV=int(input("Nhap so sinh vien: "))
 n=int(input("Nhap so sinh vien nhan hoc bong: "))
 SV=bangDiem(soSV)
